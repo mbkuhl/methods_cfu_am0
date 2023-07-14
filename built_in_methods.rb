@@ -8,19 +8,32 @@
 # The return value is "hello world"
 "Hello World".downcase
 
-
+# The include? method is called on the string object "Hello World"
+# The argument "Hello" is passed; include? has one clear job which is to check if the string argument "Hello" 
+# matches any portion of the string object in which the include? method is being called.
+# The return is true
 "Hello World".include?("Hello")
 
-
+# The end_with? method is called on the string object "Hello World"
+# The argument "Hello" is passed; end_with? has one clear job which is to check if the string argument "Hello" 
+# matches the last portion of the string object in which the end_with? method is being called.
+# The return is false
 "Hello World".end_with?("Hello")
 
-
+# The end_with? method is called on the string object "Hello World"
+# The argument "rld" is passed; end_with? has one clear job which is to check if the string argument "rld" 
+# matches the last portion of the string object in which the end_with? method is being called.
+# The return is true
 "Hello World".end_with?("rld")
 
-
+# The even? method is being called on the integer object 12
+# No arguments are passed; even? has one clear job which is to check if the integer 12 is an even number
+# The return is true
 12.even?
 
-
+# The next method is being called on the integer object 18
+# No arguments are passed; next has one clear job which is to add one to the integer 18
+# The return is 19
 18.next
 
 
