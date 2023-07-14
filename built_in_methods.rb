@@ -82,10 +82,24 @@ integer_one.abs
 # The gcd method will return the greatest common denominator of the integer variable in which it is called upon and the argument that is passed into it
 # In the example, the return is the integer 11
 integer_two= 99
-p integer_two.gcd(55)
+integer_two.gcd(55)
 
 # SECTION 4: Calling methods on variables assigned to arrays.
 # Declare 2 variables assigned to arrays.
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+# The empty? method is called on the first_array variable, which stores the array [1, 2, 3, 4, 5, 6, 7]
+# The empty? method will check to see if there are zero elements in an area. If true, it will return true in boolean. If false, false in boolean
+# In the example, the return is the boolean value false
+first_array = [1, 2, 3, 4, 5, 6, 7]
+p first_array.empty?
+
+# The index method is called on the second_array variable, which store the array ["what", "is", "my", "name"]. 
+# The method has been passed the argument "my" as a string
+# The index method will check the array to see if the argument matches any of the elements exactly. If not
+# it will return nil. If so, it will return the index position of the matching element
+# In the example, the return is 2
+second_array = ["what", "is", "my", "name"]
+p second_array.index("my")
