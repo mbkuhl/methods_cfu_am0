@@ -63,7 +63,7 @@ rose.split
 # The squeeze method will remove all but one of a set of adjacent identical characters in the string variable that it is called on.
 # In this example, the return is a string with the value "bity !#boder ble sdjnefv"
 gibberish = "bitty   !!!###booooooder    bbllee sdjnefv"
-puts gibberish.squeeze
+gibberish.squeeze
 
 
 # SECTION 3: Calling methods on variables assigned to integers.
@@ -72,7 +72,17 @@ puts gibberish.squeeze
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+# The abs method is called on the integer_one variable, which stores the integer -1
+# The abs method will return the absolute value of the integer variable in which it is called upon
+# In the example, the return is the integer 1
+integer_one = -1
+integer_one.abs
 
+# The gcd method is called on the integer_two variable, which stores the integer 99, using the integer of a value of 55 as an argument
+# The gcd method will return the greatest common denominator of the integer variable in which it is called upon and the argument that is passed into it
+# In the example, the return is the integer 11
+integer_two= 99
+p integer_two.gcd(55)
 
 # SECTION 4: Calling methods on variables assigned to arrays.
 # Declare 2 variables assigned to arrays.
