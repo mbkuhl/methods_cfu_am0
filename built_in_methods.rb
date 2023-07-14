@@ -52,6 +52,18 @@
 first_name = "Jeff"
 puts first_name.start_with?("J")
 
+#The split method is called on the rose variable, which stores the string "Welcome to the jungle"
+#The split method will create an array that stores each series of characters that are separated
+#by a space as a separate element that is a string
+#In this example, the return is an array storing the following elements as strings ["Welcome", "to", "the", "jungle"]
+rose = "Welcome to the jungle"
+rose.split
+
+# The squeeze method is called on the gibberish variable, which stores the string "bitty   !!!###booooooder    bbllee sdjnefv"
+# The squeeze method will remove all but one of a set of adjacent identical characters in the string variable that it is called on.
+# In this example, the return is a string with the value "bity !#boder ble sdjnefv"
+gibberish = "bitty   !!!###booooooder    bbllee sdjnefv"
+puts gibberish.squeeze
 
 
 # SECTION 3: Calling methods on variables assigned to integers.
